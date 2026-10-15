@@ -13,7 +13,7 @@ class EnvConfig {
     this.JWT_SECRET = process.env.JWT_SECRET || 'default_secret';
 
     if (!process.env.MONGODB_URI) {
-      console.warn('⚠️ Advertencia: MONGODB_URI no está definido en el archivo .env');
+      console.warn('Advertencia: MONGODB_URI no está definido en el archivo .env');
     }
   }
 

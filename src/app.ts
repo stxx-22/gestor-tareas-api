@@ -25,13 +25,13 @@ app.use('/tasks', taskRoutes);
 
 // Ruta de comprobación de estado
 app.get('/', (req, res) => {
-  res.json({ status: 'API Funcionando Correctamente 🚀', docs: 'http://localhost:3000/api-docs' });
+  res.json({ status: 'API Funcionando Correctamente ', docs: 'http://localhost:3000/api-docs' });
 });
 
 // Middleware Centralizado de Errores
 app.use(errorHandler);
 
 app.listen(env.PORT, () => {
-  console.log(`🚀 Servidor ejecutándose en el puerto http://localhost:${env.PORT}`);
-  console.log(`📄 Documentación Swagger disponible en http://localhost:${env.PORT}/api-docs`);
+  console.log(`Servidor ejecutándose en el puerto http://localhost:${env.PORT}`);
+  console.log(`Documentación Swagger disponible en http://localhost:${env.PORT}/api-docs`);
 });
